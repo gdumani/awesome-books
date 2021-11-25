@@ -7,7 +7,7 @@
     <title>Awasome Books</title>
 </head>
 <body>
-    <div class="content">
+    <main class="content">
         <h1>Awasome Books</h1> 
    
         <table>
@@ -15,26 +15,17 @@
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody id="book-list">
             </tbody>
-            </table>
-            <form id ="book-form">
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" class="form-control">
-                </div>
-            
-                <div class="form-group">
-                    <label for="author">Author</label>
-                    <input type="text" id="author" class="form-control">
-                </div>
-                <button type="submit" value='submit'>Add Book</button>
-            </form>
-            <div id="JavaScript" class="JavaScript"></div>
-            <script src="awesome.js"></script>
-    </div>         
+        </table>
+        <form id ="book-form">
+            <input type="text" id="title"  required>
+            <input type="text" id="author" required>
+            <button type="button" id='submit' value='submit'>Add Book</button>
+        </form>
+    </main>         
+    <script src="awesome.js"></script>
 </body>
 </html>

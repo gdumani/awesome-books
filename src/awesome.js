@@ -11,25 +11,23 @@ const BookArray = () => {
     localStorage.setItem('allBooks',JSON.stringify(allBooks));
   };
 
-  const UI = () => {
-     getBooks(book) {
-       const list = document.getElementById('book-list');
-       const row = document.createElement('tr');
-       row.innerHTML = ` 
-       <td>${book.title}</td>
-       <td>${book.author}</td>
-       <td><button type='button' class='delete'>Remove this book</button></td>
-       `;
-       list.appendChild(row);
-     } 
-  }
+  // const UI = () => {
+  //    getBooks(book) {
+  //      const list = document.getElementById('book-list');
+  //      const row = document.createElement('tr');
+  //      row.innerHTML = ` 
+  //      <td>${book.title}</td>
+  //      <td>${book.author}</td>
+  //      <td><button type='button' class='delete'>Remove this book</button></td>
+  //      `;
+  //      list.appendChild(row);
+  //    } 
+  // }
 
   const form = document.querySelector('#book-form');
-  document.getElementsById('book-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-  });
- 
+  
 };
+document.getElementById('submit').addEventListener('submit', () => { alert('SUBMITED')});
 
-const author = e.target.author.value;
-const title = e.target.title.value; 
+// const author = e.target.author.value;
+// const title = e.target.title.value; 
